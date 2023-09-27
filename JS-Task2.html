@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TASK2</title>
+</head>
+<body>
+    <label for="str">Input string : </label>
+    <input id="i1" type="text" name="str">
+    <button onclick="abc()">Click</button>
+    <script>
+        function abc(){
+            let str = document.getElementById("i1").value;
+            const a = str.split('');
+            const b = a.sort();
+            const c = b.join('');
+            alert("The string in alphabetic order is : "+c);
+        }
+    </script>
+</body>
+</html>
